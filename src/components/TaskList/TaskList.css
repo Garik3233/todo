@@ -1,0 +1,84 @@
+.todos {
+  padding: 20px 0;
+  border-bottom: 1px solid #008594;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+
+.todos p {
+  flex: 1 0;
+}
+
+.todo_item_checkbox {
+  width: 18px;
+  height: 18px;
+  outline: 2px solid #008594;
+  accent-color: #008594;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  -o-appearance: none;
+}
+
+.todo_item_checkbox:checked {
+  background: #008594;
+  appearance: auto;
+}
+
+.delete_task {
+  background: none;
+  border: none;
+  font-size: 24px;
+  transition: all 0.2s ease-in;
+  cursor: pointer;
+}
+
+.delete_task:hover {
+  color: #0055ff;
+  font-weight: 700;
+}
+
+.todo_item_text {
+  color: #666;
+}
+
+.todo_item_text.checked {
+  color: #acacac;
+}
+
+.paragraph {
+  margin-top: 120px;
+  margin-left: 100px;
+  text-align: center;
+}
+
+.paragraph_1 {
+  font-size: 24px;
+  color: #acacac;
+}
+
+.paragraph_2 {
+  font-size: 36px;
+  color: #666;
+}
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 767px) and (-webkit-min-device-pixel-ratio: 2) {
+  .todos {
+    border-bottom: 1px solid #ccc;
+    gap: 15px;
+    font-size: 16px;
+  }
+
+  .paragraph {
+    margin: 0 auto;
+  }
+
+  .paragraph_1 {
+    font-size: 14px;
+  }
+
+  .paragraph_2 {
+    font-size: 18px;
+  }
+}
